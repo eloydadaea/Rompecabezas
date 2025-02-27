@@ -109,13 +109,13 @@ button:hover {
   }
 
   #puzzle-container {
-    width: 90vw; 
-    height: 90vw; 
+    width: 70vw; 
+    height: 70vw; 
   }
 
   #reference-container {
-    width: 80vw;
-    height: 80vw;
+    width: 60vw;
+    height: 60vw;
   }
 
   button {
