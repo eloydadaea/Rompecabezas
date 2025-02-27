@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-image: url(foto/FondoRompe.jpg); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#puzzle-container {
+  width: 280px; 
+  height: 280px; 
+  border: 2px solid #ccc;
+  position: relative;
+  background-color: #fff;
+  background-image:
+    linear-gradient(to right, #ccc 1px, transparent 1px),
+    linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: calc(100% / 3) calc(100% / 3);
+}
+
+.puzzle-piece {
+  position: absolute;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.2s ease; 
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.05); 
+}
+
+#reference-container {
+  width: 200px; 
+  height: 200px; 
+  border: 2px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reference-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff); /* Colores personalizados */
+  top: -50px;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #puzzle-container {
+    width: 90vw; 
+    height: 90vw; 
+  }
+
+  #reference-container {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
