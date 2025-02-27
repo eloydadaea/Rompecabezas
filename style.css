@@ -26,8 +26,8 @@ h1 {
 }
 
 #puzzle-container {
-  width: 250px; 
-  height: 250px; 
+  width: 200px; 
+  height: 200px; 
   border: 2px solid #ccc;
   position: relative;
   background-color: #fff;
@@ -50,7 +50,7 @@ h1 {
 }
 
 #reference-container {
-  width: 12px; 
+  width: 120px; 
   height: 120px; 
   border: 2px solid #ccc;
   background-color: #fff;
@@ -109,8 +109,8 @@ button:hover {
   }
 
   #puzzle-container {
-    width: 70vw; 
-    height: 70vw; 
+    width: 60vw; 
+    height: 60vw; 
   }
 
   #reference-container {
