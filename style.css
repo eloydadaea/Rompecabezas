@@ -26,8 +26,8 @@ h1 {
 }
 
 #puzzle-container {
-  width: 280px; 
-  height: 280px; 
+  width: 250px; 
+  height: 250px; 
   border: 2px solid #ccc;
   position: relative;
   background-color: #fff;
