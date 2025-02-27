@@ -50,8 +50,8 @@ h1 {
 }
 
 #reference-container {
-  width: 200px; 
-  height: 200px; 
+  width: 12px; 
+  height: 120px; 
   border: 2px solid #ccc;
   background-color: #fff;
   display: flex;
@@ -60,8 +60,8 @@ h1 {
 }
 
 #reference-image {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 button {
